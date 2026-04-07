@@ -2,7 +2,7 @@
  * TEMPLATE CONTENT
  * ----------------
  * Replace all values below with your organization's real information.
- * Images use picsum.photos for placeholders — replace with your own images
+ * Images use Unsplash placeholders — replace with your own images
  * stored in /public or via a CMS.
  */
 
@@ -11,6 +11,8 @@ export const siteConfig = {
   tagline: "Building a Better World Together",
   description:
     "We empower communities through education, healthcare access, and sustainable development programs across underserved regions.",
+  // Replace with your real domain (no trailing slash). Used for SEO, sitemap, and robots.txt.
+  url: "https://hopeforward.org",
   email: "contact@hopeforward.org",
   phone: "+1 (555) 234-5678",
   address: "123 Kindness Ave, San Francisco, CA 94105",
@@ -41,8 +43,10 @@ export const heroContent = {
   primaryCta: { label: "Donate Now", href: "#donate" },
   secondaryCta: { label: "Learn More", href: "#about" },
   // Replace with a high-quality hero image (1920×1080 recommended)
-  image: "https://picsum.photos/seed/ngo-hero/1920/1080",
-  imageAlt: "Volunteers working together in a community",
+  // Placeholder: volunteers building a shelter, sourced from Unsplash (free to use)
+  image:
+    "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1920&q=80",
+  imageAlt: "Volunteers from diverse backgrounds working together in a community",
 };
 
 export const missionContent = {
@@ -287,6 +291,7 @@ export const footerLinks = {
     { label: "Careers", href: "#" },
     { label: "Press & Media", href: "#" },
     { label: "Annual Reports", href: "#" },
+    { label: "FAQ", href: "/faq" },
   ],
   programs: [
     { label: "Education for All", href: "#programs" },
