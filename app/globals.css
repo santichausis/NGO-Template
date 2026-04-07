@@ -1,26 +1,39 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* -----------------------------------------------
+   * BRAND COLORS — Replace with your organization's
+   * color palette. Use a tool like coolors.co or
+   * your brand guidelines to find your hex values.
+   * ----------------------------------------------- */
+  --color-brand-50: oklch(0.97 0.03 160);
+  --color-brand-100: oklch(0.93 0.07 160);
+  --color-brand-200: oklch(0.86 0.12 160);
+  --color-brand-300: oklch(0.76 0.17 160);
+  --color-brand-400: oklch(0.65 0.19 160);
+  --color-brand-500: oklch(0.55 0.18 160);
+  --color-brand-600: oklch(0.47 0.16 160);
+  --color-brand-700: oklch(0.40 0.13 160);
+  --color-brand-800: oklch(0.33 0.10 160);
+  --color-brand-900: oklch(0.26 0.07 160);
+
+  --color-accent-400: oklch(0.82 0.17 85);
+  --color-accent-500: oklch(0.74 0.18 85);
+  --color-accent-600: oklch(0.65 0.17 85);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Smooth scrolling for in-page anchor links */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply text-slate-800 bg-white;
+}
+
+/* Section scroll offset for sticky navbar */
+[id] {
+  scroll-margin-top: 5rem;
 }
