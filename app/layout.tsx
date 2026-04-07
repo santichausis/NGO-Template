@@ -40,14 +40,13 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
-    // Add /public/og-image.png (1200×630px) for social sharing previews
-    // images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `${siteConfig.name} — ${siteConfig.tagline}` }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
-    // images: ["/og-image.png"],
+    images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
   alternates: {
