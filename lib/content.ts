@@ -12,7 +12,7 @@ export const siteConfig = {
   description:
     "We empower communities through education, healthcare access, and sustainable development programs across underserved regions.",
   // Replace with your real domain (no trailing slash). Used for SEO, sitemap, and robots.txt.
-  url: "https://hopeforward.org",
+  url: "https://ngo-template-delta.vercel.app",
   email: "contact@hopeforward.org",
   phone: "+1 (555) 234-5678",
   address: "123 Kindness Ave, San Francisco, CA 94105",

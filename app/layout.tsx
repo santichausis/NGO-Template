@@ -93,10 +93,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={geist.variable}>
-      <body className="antialiased font-sans">
+      <head>
         <JsonLd />
-        {children}
-      </body>
+      </head>
+      <body className="antialiased font-sans">{children}</body>
     </html>
   );
 }
